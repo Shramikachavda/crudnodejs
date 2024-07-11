@@ -1,11 +1,8 @@
-
-
-
-//  3/7/2024 day 5
-/*const express = require('express')
-
+const express = require('express')
+require('dotenv').config()
 let app=express()
 
+app.use(express.json())
 app.get('/hello' , (req , res)=>{
     res.send("hello word")
 }) 
@@ -16,22 +13,8 @@ app.get('/redirect' , (req , res)=>{
     res.redirect('/check')       
 }) 
 app.get('/check' , (req , res)=>{
-    res.send("<h1> redirect </h1>")
-
-app.post('/createProd' , (req , res)={
-
-})     
+    res.send("<h1> redirect </h1>")   
 })
-app.listen(8000,()=>{
-    console.log('port started on 8000')
-}) */
-
-//  4/7/2024 day 6 ( create product and get all product)
- const express = require('express')
-require('dotenv').config()
-let app=express()
-
-app.use(express.json())
 let arr =[]
 let id = 0
 let isDelete
@@ -209,10 +192,5 @@ app.listen(process.env.PORT,()=>{
 }) 
 
 
-//   5/7/2024 day 7   ( update product )
-//   8/7/2024 day 8 (delete product  , hard & soft delete)
-//   9/7/2024 day 9 (2xx sucess ( 200 sucess , 201 created) ,
-       //   4xx error (403 forbidden ,404 (not found)), 5xx server error ( 501 internal server))
-//   10/7/24 day 10   (range and sort api)
 
 
