@@ -1,16 +1,4 @@
-// npm  (node package manager)    //step 1 npn init
-//  npm i express / npm install / npm install package_name # update dependancy in future if we run this
-//nvm (node version manager )
-//type of req:get ,post,put,delete  // localhost:portno/apiname?id = no(query)
-//get = only url is given, give all data ,we can only use browser here
-//post = body needed
-//put= body ,query , for updating
-//delete = query
-//nodemod download for not restarting  port again and again when we save the file it will set the port
-// "start":"nodemon Ipractice.js" in josn file in script  (nodemod package)
-// for stating the node you have to write " npm start " everytime when you want to use
-//   1. npm i dotenv  2.make .env file write PORT=port no 3. reqire('dotenv).config() 
-// 4 . app.listen(process.env.PORT,()=>{ console.log('port started on '+process.env.PORT) }) 
+
 
 
 //  3/7/2024 day 5
